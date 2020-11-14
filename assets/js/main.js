@@ -52,11 +52,11 @@ let header = $(`
       </li>
       <!--TOGGLE FOR LIGHT/DARK MODE-->
       <li>
-        <label for="switch" class="theme-switch">
+        <label for="top-nav-theme-switcher" class="theme-switch">
           <input
             class="toggle-checkbox"
             type="checkbox"
-            id="switch"
+            id="top-nav-theme-switcher"
             name="theme"
           />
           <div class="toggle-slot">
@@ -97,8 +97,13 @@ let header = $(`
 
   <!--TOGGLE FOR LIGHT/DARK MODE-->
   <li>
-    <label for="switch" class="theme-switch">
-      <input class="toggle-checkbox" type="checkbox" id="switch" name="theme" />
+    <label for="top-nav-theme-switcher" class="theme-switch">
+      <input 
+        class="toggle-checkbox" 
+        type="checkbox" 
+        id="side-nav-theme-switcher" 
+        name="theme" 
+      />
       <div class="toggle-slot side-toggle">
         <div class="sun-icon-wrapper">
           <div
@@ -152,14 +157,7 @@ let footer = $(`
               >
                 <i class="fab fa-twitter"></i>
               </a>
-              <a
-                class="social-icon-footer linkedin"
-                href=""
-                target="_blank"
-                rel="author"
-              >
-                <i class="fab fa-linkedin-in"></i>
-              </a>
+
               <a
                 class="social-icon-footer medium"
                 href=""
@@ -168,6 +166,16 @@ let footer = $(`
               >
                 <i class="fab fa-medium-m"></i>
               </a>
+              
+              <a
+                class="social-icon-footer linkedin"
+                href=""
+                target="_blank"
+                rel="author"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              
               <a
                 class="social-icon-footer github"
                 href=""
@@ -195,7 +203,7 @@ let footer = $(`
                 <input
                   type="text"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  id="name"
                   placeholder="Enter Name"
                 />
               </fieldset>
@@ -203,14 +211,14 @@ let footer = $(`
                 <input
                   type="email"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  id="email"
                   placeholder="Enter email"
                 />
               </fieldset>
               <fieldset class="form-group text-center">
                 <textarea
                   class="form-control"
-                  id="exampleMessage"
+                  id="message"
                   placeholder="Message"
                 ></textarea>
               </fieldset>
@@ -238,22 +246,28 @@ bodyElement.append(footer);
 
 /*JavaScript for toggle for light/dark mode*/
 
-var checkbox = document.querySelector("input[name=theme]");
-if (checkbox) {
-  checkbox.addEventListener("change", function () {
-    if (this.checked) {
-      trans();
-      document.documentElement.setAttribute("data-theme", "dark");
-    } else {
-      trans();
-      document.documentElement.setAttribute("data-theme", "light");
-    }
-  });
+let topNavThemeSwitcher = document.getElementById("top-nav-theme-switcher");
 
-  let trans = () => {
-    document.documentElement.classList.add("transition");
-    window.setTimeout(() => {
-      document.documentElement.classList.remove("transition");
-    }, 1000);
-  };
+if (topNavThemeSwitcher) {
+  topNavThemeSwitcher.addEventListener("change", toggleTheme);
 }
+
+function toggleTheme() {
+  let sideNavThemeSwitcher = document.getElementById("side-nav-theme-switcher");
+  if (this.checked) {
+    sideNavThemeSwitcher.checked = true;
+    trans();
+    document.documentElement.setAttribute("data-theme", "dark");
+  } else {
+    sideNavThemeSwitcher.checked = false;
+    trans();
+    document.documentElement.setAttribute("data-theme", "light");
+  }
+}
+
+let trans = () => {
+  document.documentElement.classList.add("transition");
+  window.setTimeout(() => {
+    document.documentElement.classList.remove("transition");
+  }, 1000);
+};
