@@ -42,6 +42,7 @@ html {
   font-weight: bolder;
   background: var(--bg-txt-img);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: var(--txt-fill);
   padding-bottom: 0.1em;
 }
