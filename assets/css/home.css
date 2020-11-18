@@ -9,12 +9,14 @@ html[data-theme="light"] {
 html[data-theme="dark"] {
   --bg-icon: #191919;
   --col-icon: white;
-  --twitter: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1da1f2, 0 0 20px #1da1f2, 0 0 25px #1da1f2, 0 0 30px #1da1f2, 0 0 35px #1da1f2;
-  --github: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #434547, 0 0 20px #434547, 0 0 25px #434547, 0 0 30px #434547, 0 0 35px #434547;
-  --linkedin: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0e76a8, 0 0 20px #0e76a8, 0 0 25px #0e76a8, 0 0 30px #0e76a8, 0 0 35px #0e76a8;
-  --kaggle: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #41aff3, 0 0 20px #41aff3, 0 0 25px #41aff3, 0 0 30px #41aff3, 0 0 35px #41aff3;
-  --dribble: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ea4c89, 0 0 20px #ea4c89, 0 0 25px #ea4c89, 0 0 30px #ea4c89, 0 0 35px #ea4c89;
-  --medium: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00ab6c, 0 0 20px #00ab6c, 0 0 25px #00ab6c, 0 0 30px #00ab6c, 0 0 35px #00ab6c;
+  --twitter: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1da1f2, 0 0 20px #1da1f2,
+    0 0 25px #1da1f2, 0 0 30px #1da1f2, 0 0 35px #1da1f2;
+  --github: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #434547, 0 0 20px #434547,
+    0 0 25px #434547, 0 0 30px #434547, 0 0 35px #434547;
+  --linkedin: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0e76a8, 0 0 20px #0e76a8,
+    0 0 25px #0e76a8, 0 0 30px #0e76a8, 0 0 35px #0e76a8;
+  --medium: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00ab6c, 0 0 20px #00ab6c,
+    0 0 25px #00ab6c, 0 0 30px #00ab6c, 0 0 35px #00ab6c;
   --shadow-col: #15f4ee;
 }
 
@@ -57,7 +59,7 @@ html[data-theme="dark"] {
   width: 10px;
   text-indent: 0;
   /* overflow: hidden; */
-  background:var(--col-icon);
+  background: var(--col-icon);
   animation: blink 0.3s infinite alternate;
 }
 @keyframes blink {
@@ -132,16 +134,6 @@ html[data-theme="dark"] {
   box-shadow: var(--linkedin);
 }
 
-.social-icon.kaggle:after {
-  background-color: #41aff3;
-  box-shadow: var(--kaggle);
-}
-
-.social-icon.dribbble:after {
-  background-color: #ea4c89;
-  box-shadow: var(--kaggle);
-}
-
 .social-icon.medium:after {
   background-color: #00ab6c;
   box-shadow: var(--medium);
@@ -170,5 +162,6 @@ a:hover {
 @media only screen and (max-width: 450px) {
   .text {
     margin-top: 5rem;
+    font-size: 30px;
   }
 }

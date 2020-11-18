@@ -33,7 +33,7 @@ let header = $(`
 <nav class="black">
   <div class="nav-wrapper">
     <a href="#!" class="brand-logo"
-      ><img src="assets/images/John-Doe1.png"
+      ><img src="assets/images/logo.png"
     /></a>
     <a href="#" data-target="mobile-demo" class="white-text sidenav-trigger"
       ><i class="material-icons">menu</i></a
@@ -136,7 +136,7 @@ let footer = $(`
         <div class="col-lg-7 col-md-6 pt-3">
           <div class="col-sm-6 col-md-7 footer-1" >
             <a class="webintern-footer-logo" href="#">
-              <img src="assets/images/John-Doe1.png" style="width: 200px" />
+              <img src="assets/images/logo.png" style="width: 300px; height: 100px" />
             </a>
 
             <div class="simple-text">
@@ -151,7 +151,7 @@ let footer = $(`
             <div class="social-icons-footer" >
               <a
                 class="social-icon-footer twitter"
-                href=""
+                href="https://twitter.com/iam_talwinder"
                 target="_blank"
                 rel="author"
               >
@@ -160,7 +160,7 @@ let footer = $(`
 
               <a
                 class="social-icon-footer medium"
-                href=""
+                href="https://medium.com/@iamtalwinder"
                 target="_blank"
                 rel="author"
               >
@@ -169,7 +169,7 @@ let footer = $(`
               
               <a
                 class="social-icon-footer linkedin"
-                href=""
+                href="https://www.linkedin.com/in/iamtalwinder"
                 target="_blank"
                 rel="author"
               >
@@ -178,7 +178,7 @@ let footer = $(`
               
               <a
                 class="social-icon-footer github"
-                href=""
+                href="https://github.com/iamtalwinder"
                 target="_blank"
                 rel="author"
               >
@@ -186,7 +186,7 @@ let footer = $(`
               </a>
             </div>
 
-            <p><a href="" style="color: white;">contact@johndoe.com</a></p>
+            <p><a href="" style="color: white;">singhtalwinder790@gmail.com</a></p>
           </div>
         </div>
 

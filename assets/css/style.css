@@ -357,6 +357,10 @@ html.transition *:after {
   margin-top: 4px;
 }
 
+.contact-form fieldset {
+  display: flex;
+}
+
 .contact-form #name,
 #email {
   background-color: #fff;
@@ -403,15 +407,6 @@ html.transition *:after {
   height: 2px;
   background: #26a69a;
   margin-top: 2px;
-}
-
-.contact-form #exampleInputEmail1 {
-  background-color: #fff;
-  padding: 0.375rem 0.75rem;
-  height: 2rem;
-  width: 93%;
-  font-size: 15px;
-  border-radius: 2px;
 }
 
 .send-btn {
