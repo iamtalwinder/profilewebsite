@@ -50,9 +50,11 @@ html[data-theme="dark"] {
   display: none;
   line-height: 1;
 }
+
 .animated-text span.active {
   display: inline-block;
 }
+
 .animated-text:after {
   content: ".";
   display: inline-block;
@@ -62,6 +64,7 @@ html[data-theme="dark"] {
   background: var(--col-icon);
   animation: blink 0.3s infinite alternate;
 }
+
 @keyframes blink {
   from {
     opacity: 0;
