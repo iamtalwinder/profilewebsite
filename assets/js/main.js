@@ -45,8 +45,8 @@ let header = $(`
       <li>
         <a
           class="white-text"
-          href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing"
-          target="_blank"
+          href="assets/resume.pdf"
+          download
           >My Resume</a
         >
       </li>
