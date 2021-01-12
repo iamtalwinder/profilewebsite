@@ -198,7 +198,7 @@ let footer = $(`
           <!-- TT-SUBSCRIBE -->
 
           <div class="contact-form">
-            <form>
+            <form action="mailto:singhtalwinder790@gmail.com" method="post" enctype="text/plain">
               <fieldset class="form-group text-center">
                 <input
                   type="text"
@@ -223,7 +223,7 @@ let footer = $(`
                 ></textarea>
               </fieldset>
               <fieldset class="form-group text-xs-right text-center">
-                <button type="button" class="send-btn btn btn-lg">Send</button>
+                <button type="submit" class="send-btn btn btn-lg">Send</button>
               </fieldset>
             </form>
           </div>
